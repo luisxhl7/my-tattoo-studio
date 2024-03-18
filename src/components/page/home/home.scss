@@ -1,3 +1,7 @@
-.home{
-    background-color: transparent;
+.home {
+  background-color: transparent;
+  &__section-2 {
+    background-color: rgb(88, 88, 88);
+  }
 }
+
