@@ -48,44 +48,38 @@ export const Home = () => {
       <div className="section-new">
         <img src={rasgado} alt="" className="section-new__image1" />
         <div className="section-new__content-info">
-          <h2>"Transformando la piel en lienzos vivos, uno puntillado a la vez."</h2>
+          <h2>
+            "Transformando la piel en lienzos vivos, uno puntillado a la vez."
+          </h2>
         </div>
         <img src={rasgado} alt="" className="section-new__image2" />
       </div>
 
       <div className="home__section-4">
         <div className="home__section-4__content-info">
-          <h2>CONOCE A FIDO TATTOO Y SU EQUIPO</h2>
-          <img src={images.icono_tattoo} alt="" width={100} height={100}/>
+          <h2>CONOCE A MY STUDIO TATTOO Y SU EQUIPO</h2>
+          <img src={images.icono_tattoo} alt="" width={100} height={100} />
           <p>
-            Fido Tattoo es un estudio artístico de tatuajes y piercing fundado
-            en 2005 bajo el pseudónimo de su fundador, Alberto Ramírez «Fido».
-            Desde sus comienzos como tatuador, y desde la fecha de la apertura
-            de el estudio, Fido Tattoo se ha posicionado en la provincia de
-            Málaga como un referente gracias a la calidad artística y técnica de
-            sus tatuajes y piercings.
+            En el corazón del bullicioso distrito artístico de la ciudad, se
+            encuentra MY Studio Tatto, un santuario para los amantes del arte
+            corporal. Desarrollado por Luis Lopez, este estudio se ha convertido
+            rápidamente en un punto de referencia para quienes buscan expresar
+            su individualidad a través de la tinta.
           </p>
           <p>
-            CONOCE A FIDO TATTOO Y SU EQUIPO Fido Tattoo es un estudio artístico
-            de tatuajes y piercing fundado en 2005 bajo el pseudónimo de su
-            fundador, Alberto Ramírez «Fido». Desde sus comienzos como tatuador,
-            y desde la fecha de la apertura de el estudio, Fido Tattoo se ha
-            posicionado en la provincia de Málaga como un referente gracias a la
-            calidad artística y técnica de sus tatuajes y piercings. El equipo
-            humano de Fido Tattoo cuenta con artistas y profesionales con amplia
-            experiencia en todo tipo de estilos, desde lo más vintage a lo más
-            rompedor y contemporáneo. Desde nuestra web, y en nombre de todos
-            los que formamos Fido Tattoo, esperamos que descubras la inspiración
-            en nuestros trabajos y te animes a visitarnos para contarnos que te
-            gustaría hacerte.
+            En MY Studio Tatto, el arte del tatuaje se eleva a nuevas alturas.
+            Nuestro equipo de artistas altamente talentosos y apasionados está
+            dedicado a transformar las ideas de nuestros clientes en
+            impresionantes obras de arte viviente. Desde el realismo meticuloso
+            hasta los diseños abstractos y geométricos, cada tatuaje es una
+            expresión única de la visión del cliente y la habilidad del artista.
           </p>
           <p>
-            El equipo humano de Fido Tattoo cuenta con artistas y profesionales
-            con amplia experiencia en todo tipo de estilos, desde lo más vintage
-            a lo más rompedor y contemporáneo. Desde nuestra web, y en nombre de
-            todos los que formamos Fido Tattoo, esperamos que descubras la
-            inspiración en nuestros trabajos y te animes a visitarnos para
-            contarnos que te gustaría hacerte.
+            En MY Studio Tatto, ofrecemos una amplia gama de servicios para
+            satisfacer todas las necesidades de arte corporal. Desde el diseño y
+            la creación de tatuajes personalizados hasta la cobertura de
+            tatuajes existentes y la eliminación láser, estamos aquí para
+            ayudarte a hacer realidad tus visiones.
           </p>
         </div>
         <img src={rasgado} alt="" className="" />
