@@ -14,16 +14,61 @@
             backdrop-filter: blur(5px);
         }
     }
-    & ul{
-        width: 800px;
+    &__options-list{
         display: flex;
         align-items: center;
         justify-content: space-around;
         & li{
+            height: 100%;
+            width: 150px;
+            display: flex;
+            color: #9b9b9b;
+            cursor: pointer;
+            text-align: center;
+            align-items: center;
             list-style-type: none;
+            justify-content: center;
+            transition: .5s ease-out;
             & a{
+                color: #9b9b9b;
+                transition: .5s ease-out;
+            };
+            &:hover{
                 color: #ffffff;
-                
+                background-color: rgba(58, 58, 58, 0.486);
+                & a{
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    &__sub-Menu {
+        position: relative;
+        text-align: center;
+        ol {
+          width: 100%;
+          position: absolute;
+          top: 80px;
+          left: 0px;
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          display: none;
+          border-radius: 0px 0px 15px 15px;
+          background: #000000a2;
+          color: #9b9b9b;
+
+          
+          & li {
+            padding: 10px 0px;
+
+          }
+        }
+    
+        &.--open {
+            ol {
+                display: block;
             }
         }
     }

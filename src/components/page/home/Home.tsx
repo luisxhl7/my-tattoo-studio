@@ -1,20 +1,11 @@
-import { Banner } from "../../molecules/banner/Banner";
 import rasgado from "../../../assets/rasgado-con-negro-svg.svg";
-import "./home.scss";
 import images from "../../../assets";
+import "./home.scss";
 
-const imagesList = [
-  "https://cdn0.bodas.net/article-real-wedding/578/3_2/960/jpg/4866844.webp",
-  "https://tatuajes-barcelona.pro-arts.com/wp-content/uploads/2022/08/Ser-tatuador-profesional-368x400.jpg",
-  "https://www.familyarttattoo.com/wp-content/uploads/2023/04/Lu-768x768.jpg",
-  "https://lirp.cdn-website.com/md/pexels/dms3rep/multi/opt/pexels-photo-3657563-1920w.jpeg",
-  "https://miamicelebrities.com/wp-content/uploads/2022/11/306063231_751497419472784_3550204227281687983_n_11zon.jpg",
-];
 
 export const Home = () => {
   return (
     <section className="home">
-      <Banner images={imagesList} />
 
       <div className="home__section-3">
         <div className="home__section-3__content-info">
