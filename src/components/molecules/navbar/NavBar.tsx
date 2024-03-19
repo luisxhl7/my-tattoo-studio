@@ -27,19 +27,19 @@ export const NavBar = () => {
           {isSubMenuOpen ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
           <ol>
             <li>
-              <Link to="/"> tatuador 1 </Link>
+              <Link to="/tatuador/keneth"> Keneth </Link>
             </li>
             <li>
-              <Link to="/"> tatuador 2 </Link>
+              <Link to="/tatuador/luis"> luis </Link>
             </li>
             <li>
-              <Link to="/"> tatuador 3 </Link>
+              <Link to="/tatuador/veronica"> veronica </Link>
             </li>
             <li>
-              <Link to="/"> tatuador 4 </Link>
+              <Link to="/tatuador/yeison"> yeison </Link>
             </li>
             <li>
-              <Link to="/"> tatuador 5 </Link>
+              <Link to="/tatuador/juan"> juan </Link>
             </li>
           </ol>
         </li>

@@ -1,11 +1,13 @@
 import rasgado from "../../../assets/rasgado-con-negro-svg.svg";
+import { Banner } from "../../molecules/banner";
 import images from "../../../assets";
 import "./home.scss";
-
+import { imagesList } from "../../../data/tattoo-artist";
 
 export const Home = () => {
   return (
     <section className="home">
+      <Banner imagesList={imagesList} title='my studio tattoo'/>
 
       <div className="home__section-3">
         <div className="home__section-3__content-info">
