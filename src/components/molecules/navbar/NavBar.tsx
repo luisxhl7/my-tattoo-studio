@@ -11,6 +11,10 @@ export const NavBar = () => {
     setIsSubMenuOpen(!isSubMenuOpen);
   };
 
+  const handleLinkClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <nav className="navBar">
       <Link to="/" className="navBar__logo">
@@ -18,7 +22,7 @@ export const NavBar = () => {
       </Link>
       <ul className="navBar__options-list">
         <li>
-          <Link to="/">Inicio</Link>
+          <Link to="/" onClick={handleLinkClick}>Inicio</Link>
         </li>
         <li className={isSubMenuOpen ? "navBar__sub-Menu --open" : "navBar__sub-Menu"}
           onClick={toggleSubMenu}
@@ -27,27 +31,27 @@ export const NavBar = () => {
           {isSubMenuOpen ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
           <ol>
             <li>
-              <Link to="/tatuador/keneth"> Keneth </Link>
+              <Link to="/tatuador/keneth" onClick={handleLinkClick}> Keneth </Link>
             </li>
             <li>
-              <Link to="/tatuador/luis"> luis </Link>
+              <Link to="/tatuador/luis" onClick={handleLinkClick}> luis </Link>
             </li>
             <li>
-              <Link to="/tatuador/veronica"> veronica </Link>
+              <Link to="/tatuador/veronica" onClick={handleLinkClick}> veronica </Link>
             </li>
             <li>
-              <Link to="/tatuador/yeison"> yeison </Link>
+              <Link to="/tatuador/yeison" onClick={handleLinkClick}> yeison </Link>
             </li>
             <li>
-              <Link to="/tatuador/juan"> juan </Link>
+              <Link to="/tatuador/juan" onClick={handleLinkClick}> juan </Link>
             </li>
           </ol>
         </li>
         <li>
-          <Link to="/">Cuidados</Link>
+          <Link to="/cuidados" onClick={handleLinkClick}>Cuidados</Link>
         </li>
         <li>
-          <Link to="/">Contacto</Link>
+          <Link to="/contacto" onClick={handleLinkClick}>Contacto</Link>
         </li>
       </ul>
     </nav>

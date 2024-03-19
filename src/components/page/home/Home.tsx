@@ -1,8 +1,8 @@
 import rasgado from "../../../assets/rasgado-con-negro-svg.svg";
 import { Banner } from "../../molecules/banner";
+import { imagesList } from "../../../data/tattoo-artist";
 import images from "../../../assets";
 import "./home.scss";
-import { imagesList } from "../../../data/tattoo-artist";
 
 export const Home = () => {
   return (
@@ -42,7 +42,7 @@ export const Home = () => {
         <img src={rasgado} alt="" className="section-new__image1" />
         <div className="section-new__content-info">
           <h2>
-            "Transformando la piel en lienzos vivos, uno puntillado a la vez."
+            "Transformando la piel en lienzos vivos, un puntillado a la vez."
           </h2>
         </div>
         <img src={rasgado} alt="" className="section-new__image2" />

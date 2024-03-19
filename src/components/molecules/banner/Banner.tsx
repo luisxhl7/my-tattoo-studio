@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { ImageItem } from "../../../interface/interface";
 import images from "../../../assets";
 import "./banner.scss";
 
 interface BannerProps {
-  imagesList?: string[] | string;
-  title: string | undefined;
+  imagesList?: ImageItem[] | string;
+  title?: string;
 }
 
 export const Banner: React.FC<BannerProps> = ({ imagesList, title }) => {
@@ -37,11 +39,11 @@ export const Banner: React.FC<BannerProps> = ({ imagesList, title }) => {
 
   return (
     <div className="banner__section-1">
-      
       <div className="banner__section-image">
         {imagesList && Array.isArray(imagesList) && imagesList.length > 0 ? (
-          imagesList.map((image, idx) => (
-            <div
+          imagesList.map((item, idx) => (
+            <Link
+              to={`/tatuador/${item.name}`}
               key={idx}
               onMouseEnter={() => handleMouseEnter(idx)}
               onMouseLeave={handleMouseLeave}
@@ -53,18 +55,17 @@ export const Banner: React.FC<BannerProps> = ({ imagesList, title }) => {
                 hoveredImage !== null && idx > hoveredImage ? "--isFilter" : ""
               }`}
             >
-              <img src={image} alt="" />
-            </div>
+              <span className="banner__content-image__name">{item?.name}</span>
+              <img src={item?.image} alt="" title={item?.name} />
+            </Link>
           ))
         ) : (
           <img src={typeof imagesList === "string" ? imagesList : ""} alt="" />
         )}
       </div>
-      
+
       <div className="banner__divisor-section">
-        {title && 
-          <h1>{title}</h1>
-        }
+        {title && <h1>{title}</h1>}
         <img src={images.rasgado_con_negro} alt="" />
       </div>
     </div>
